@@ -1,0 +1,131 @@
+.footer
+    background: #0C0C0C
+    padding: 23px 0px 32px 0px 
+    .footer-blok
+        display: flex
+        justify-content: space-between
+        &-menu
+            ul
+                column-count: 2
+                min-width:  190px
+                li
+                  
+                    a
+                        font-family: Roboto, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 28px
+                        color: rgba(255, 255, 255, 0.7)
+                        transition: 0.3s
+                        &:hover
+                            color: #FF6647
+        
+        &-contact
+            display: flex
+            flex-direction: column
+            &-tel
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 18px
+                line-height: 24px
+                text-align: right
+                color: #FFFFFF
+                margin-bottom: 6px
+            &-mail
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 13px
+                line-height: 24px
+                text-align: right
+                color: #FFFFFF
+                margin-bottom: 8px
+            p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 13px
+                line-height: 24px
+                text-align: right
+                margin-bottom: 13px
+                color: #FFFFFF
+            &-btn
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 11px
+                line-height: 13px
+                letter-spacing: 0.15em
+                text-transform: uppercase
+                color: #FF6647
+                background: rgba(255, 255, 255, 0.1)
+                border-radius: 7px
+                transition: 0.3s
+                padding: 14px 41px
+                &:hover
+                    color: black
+                    background: #FF6647
+
+
+.footer-bottom
+    background: #1C1C1C
+    padding: 10px 0px
+    &-container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        p, a
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 24px
+            color: rgba(255, 255, 255, 0.5)
+
+
+@media (min-width: 612px)
+    .line
+        display: none
+
+@media (max-width: 612px)
+    .footer
+        padding: 14px 0px 28px
+        .line
+            height: 1px
+            width: 100%
+            background: rgba(255, 255, 255, 0.2)
+            margin: 20px 0
+        .footer-blok
+            flex-direction: column
+            align-items: center
+            &-menu
+                ul
+                    column-count: unset
+                    min-width: unset
+                    text-align: center
+                    li
+                        a
+                            font-size: 13px
+                            line-height: 32px
+            &-contact
+                text-align: center
+                margin-top: 20px
+                &-tel
+                    font-size: 18px
+                    line-height: 24px
+                    margin-bottom: 8px
+                    text-align: center
+                &-mail
+                    text-align: center
+                p
+                    text-align: center
+             
+    .footer-bottom
+        padding: 15px 0px
+        &-container
+            flex-direction: column
+            a
+                &:first-child
+                    margin-bottom: 4px

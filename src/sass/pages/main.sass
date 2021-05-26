@@ -1,0 +1,762 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/footer"
+
+
+
+.open_body
+    width: 100%
+    position: fixed
+    left: 50%
+    transform: translateX(-50%)
+    overflow: hidden
+
+
+header
+    background-color:  #0C0C0C
+    padding: 15px 0px
+    .header
+        display: flex
+        align-items: center
+        &-logo
+            margin-right: 128px
+            
+        &-menu
+            display: flex
+            margin-right: 275px
+            ul
+                display: flex
+            
+                li
+                    &:not(:last-child)
+                        margin-right: 28px
+                    a
+                        font-family: 'Roboto', sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 19px
+                        color: #FFFFFF
+                        white-space: nowrap
+                        transition: 0.3s
+                        &:hover
+                            color: #FF6647
+            .form
+                margin-left: 20px
+                position: relative
+                .icon
+                    fill: red
+                &-search-btn
+                    &:hover
+                        g
+                            opacity: 1
+                svg
+                    cursor: pointer
+                &-input
+                    background: #242424
+                    display: none
+                    position: absolute
+                    top: -23px
+                    right: -22px
+                    z-index: 99999
+                    button
+                        position: absolute
+                        top: 50%
+                        left: 28px
+                        transform: translateY(-50%)
+                        border: none
+                        background: transparent
+                    .svg-search
+                        path
+                            fill: #757575
+                    .svg-close
+                        position: absolute
+                        top: 50%
+                        right: 22px
+                        transform: translateY(-50%)
+                    input
+                        background: rgba(255, 255, 255, 0.1)
+                        width: 638px
+                        padding: 24px 22px 27px 63px
+                        color: white
+                        border: none
+                        font-family: Roboto, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 19px
+                        &:focus
+                            &:invalid
+                                border: 1px solid #800000
+                        &:valid
+                            border: none
+                        
+
+                        &:placeholder
+                            font-family: Roboto, sans-serif
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 16px
+                            line-height: 19px
+                            color: rgba(255, 255, 255, 0.3)
+
+
+        &-right
+            display: flex
+            align-items: center
+            &-btn
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 11px
+                line-height: 13px
+                letter-spacing: 0.05em
+                text-transform: uppercase
+                color: #FF6647
+                padding: 13px 15px
+                border: 1px solid #FF6647
+                box-sizing: border-box
+                border-radius: 7px
+                white-space: nowrap
+                margin-right: 18px
+                transition: 0.3s
+                &:hover
+                    background: #FF6647
+                    color: #0C0C0C
+            &-contact
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                margin-right: 17px
+                a
+                    white-space: nowrap
+                    transition: 0.3s
+                    &:first-child
+                        font-family: Roboto, sans-serif
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 16px
+                        line-height: 19px
+                        color: #FFFFFF
+                    &:hover
+                        color: #ff6647
+
+                    &:nth-child(2)
+                        font-family: Roboto, sans-serif
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 13px
+                        line-height: 15px
+                        color: #FFFFFF
+                        transition: 0.3s
+                        &:hover
+                            color:#ff6647
+
+            &-social
+                display: flex
+                a
+                    &:not(:last-child)
+                        margin-right: 6px
+                    svg
+                        transition: 0.3s
+                        &:hover
+                            path
+                                fill: white
+                            .w-c
+                                fill: unset
+                                stroke: white
+                            circle
+                                stroke-opacity: 0.5
+                
+
+.main
+    background: #191919 url('../../img/bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    padding-top: 96px
+    &-blok
+        text-align: center
+        margin-bottom: 148px
+        h1
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 75px
+            line-height: 80px
+            color: #FFFFFF
+            max-width: 896px
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 38px
+        a
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 13px
+            line-height: 15px
+            letter-spacing: 0.15em
+            text-transform: uppercase
+            color: #FFFFFF
+            transition: 0.3s
+            padding: 24px 53px
+            background: #FF6647
+            border-radius: 7px
+            display: inline-block
+            &:hover
+                color: #FF6647
+                background: #FFFFFF
+    &-bottom
+        border-top: 1px solid #FF6647
+        display: flex
+        padding-top: 29px
+        padding-bottom: 26px
+        justify-content: center
+        &-item
+            max-width: 480px
+            text-align: center
+            width: 100%
+            p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 30px
+                line-height: 23px
+                text-align: center
+                color: #FFFFFF
+                margin-bottom: 8px
+            span
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 23px
+                text-align: center
+                color: #FFFFFF
+            &:nth-child(2)
+                position: relative
+                &:before
+                    content: ''
+                    position: absolute
+                    height: 110px 
+                    width: 1px
+                    background: #FF6647
+                    top: -30px
+                    right: 0
+                &:after
+                    content: ''
+                    position: absolute
+                    height: 110px 
+                    width: 1px
+                    background: #FF6647
+                    top: -30px
+                    left: 0
+
+
+
+.catalog
+    padding-top: 73px
+    margin-bottom: 112px
+    h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 60px
+        line-height: 70px
+        color: #383838
+        margin-bottom: 34px
+    &-blok
+        display: flex
+        a
+            max-width: 244px
+            min-width: 244px
+            border-radius: 10px
+            background-image: url('../../img/shape.jpg')
+            background-size: cover
+            background-repeat: no-repeat
+            padding: 38px  0px 21px 22px
+            max-height: 345px
+            display: flex
+            transition: 0.3s
+            &:hover
+                transform: translateY(-15px)
+
+            .catalog-blok-item
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                width: 100%
+            &:not(:last-child)
+                margin-right: 19px
+            p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 26px
+                color: #FFFFFF
+                text-align: left
+                margin-top: auto
+                max-width: 175px
+                margin-right: auto
+            img
+                
+            &:nth-child(4)
+                img
+                    position: relative
+                    top: -39px
+
+            &:nth-child(5)
+                background-image: url('../../img/shape_red.jpg')
+                padding-top: 0
+                p
+                    max-width: 112px
+                img
+                    align-self: center
+
+
+.our_projects
+    background-color: #FAF9F6
+    padding-top: 285px
+    padding-bottom: 113px
+    margin-top: -298px
+    .pug
+        position: absolute
+        z-index: 999
+        top: 50%
+        width: 100%
+        display: flex
+        justify-content: space-between
+        transform: translateY(-50%)
+        svg
+            cursor: pointer
+            transition: 0.3s
+            path
+                fill: #6D6D6D
+                fill-opacity: 0.3
+            &:hover
+                path
+                    fill: #FF6647
+                    fill-opacity: 1
+
+    .swiper-slide
+        margin-bottom: 60px
+
+    .swiper-pagination-bullets
+        
+        .swiper-pagination-bullet 
+            width: 11px
+            height: 11px
+            &:not(:last-child)
+                margin-right: 18px
+        .swiper-pagination-bullet-active
+            background: #FF6647
+    h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 60px
+        line-height: 70px
+        color: #383838
+        margin-bottom: 65px
+        text-align: center
+    &_slider_blok
+        max-width: 1112px
+        background: rgba(255, 255, 255, 0.8)
+        border-radius: 15px
+        padding: 47px 53px 54px 45px
+        margin: 0 auto
+        display: flex
+        align-items: center
+        img
+            margin-right: 40px
+        &_text
+            &-bg
+                background: white
+                #title
+                    background: url('../../img/text_bg.png')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    -webkit-text-fill-color: transparent
+                    -webkit-background-clip: text
+                h3
+                    font-family: Roboto, sans-serif
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 40px
+                    line-height: 65px
+                    color: #383838
+            p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 27px
+                color: #383838
+                max-width: 503px
+                &:nth-child(3)
+                    font-family: Roboto, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 27px
+                    color: #383838
+                    margin-top: 30px
+                    display: block
+                    span
+                        margin: 0 9px
+                        color: #D9D9D9
+
+
+.services
+    background-image: url('../../img/service_bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &-container
+        padding-bottom: 84px
+    h2
+        padding-top: 68px
+        margin-bottom: 84px
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 60px
+        line-height: 70px
+        color: #FFFFFF
+        max-width: 919px
+    &-blok
+        display: flex
+        justify-content: space-between
+        position: relative
+        &:after
+            content: url(../../img/line.svg)
+            position: absolute
+            top: 30px
+            z-index: 0
+            z-index: 0
+        &-item
+            max-width: 255px
+            position: relative
+            z-index: 1
+            svg
+                margin-bottom: 33px
+            p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 23px
+                color: #FFFFFF
+                margin-bottom: 14px
+            span
+                font-family: Roboto,sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 23px
+                color: rgba(255, 255, 255, 0.9)
+           
+
+.partners
+    padding-top: 67px
+    h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 60px
+        line-height: 70px
+        color: #383838
+        margin-bottom: 45px
+    &-blok
+        &-item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 64px
+
+
+.help
+    padding: 93px 0px 135px 0px
+    background-image: url('../../img/help_blok.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &-blok
+        max-width: 782px
+        margin: 0 auto
+        h2
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 60px
+            line-height: 70px
+            color: #0F0D0D
+            margin-bottom: 23px
+            text-align: center
+        p
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 23px
+            color: #0F0D0D
+            text-align: center
+        form 
+            margin-top: 72px
+            display: flex
+            .form-item
+                display: flex
+                flex-direction: column
+                label
+                    font-family: Roboto, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 11px
+                    line-height: 13px
+                    color: #1C1C1C
+                    opacity: 0.7
+                    margin-bottom: 12px
+                input
+                    font-family: Roboto, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    color: #1C1C1C
+                    border: none
+                    background: transparent
+                    border-bottom: 1px solid #B7A7A4
+                    padding-bottom: 12px
+                    margin-right: 24px
+                    min-width: 234px
+                    &:placeholder
+                        font-family: Roboto, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 19px
+                        color: #1C1C1C
+                        opacity: 0.2
+            button
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 13px
+                line-height: 15px
+                letter-spacing: 0.15em
+                border: none
+                text-transform: uppercase
+                color: #FFFFFF
+                background: #FF6647
+                border-radius: 7px
+                transition: 0.3s
+                cursor: pointer
+                padding: 23px 53px
+                margin-left: 12px
+                white-space: nowrap
+                &:hover
+                    color: #FF6647
+                    background: #FFFFFF
+
+
+
+
+
+@media (max-width: 1299px)
+    .container
+        padding: 0 20px
+
+    header
+        .header
+            justify-content: space-between
+            &-logo
+                margin-right: 0
+            &-menu
+                margin-right: 0
+
+    .catalog-blok
+        overflow-x: scroll
+
+@media (min-width: 1035px)
+    .burger
+        display: none
+    .header-mobile
+        display: none
+
+@media (max-width: 1035px)
+    header
+        .header
+            &-menu
+                order: -1
+                ul
+                    display: none
+                .form
+                    margin-left: 0
+                    position: unset
+                    .search-btn
+                        g
+                            opacity: 1
+                    .form-input
+                        background: #0C0C0C
+                        right: 0
+                        width: 100%
+                        top: 0
+                        .svg-search
+                            display: none
+                        input
+                            width: 100%
+                            background: #0C0C0C
+                        .svg-close
+                            right: 0 
+                            left: 22px
+            &-mobile
+           
+                z-index: 99
+                position: absolute
+                width: 100%
+                top: 0
+                right: 0
+                background-image: url('../../img/menu_bg.png')
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+                padding: 20px
+                padding-top: 15px
+                display: flex
+                flex-direction: column
+                .svg-menu-close
+                    align-self: flex-end
+                    margin-bottom: 3px
+                .header-right
+                    display: flex
+                    justify-content: space-between
+                    .header-right-contact
+                        align-items: flex-start
+                ul
+                    margin-bottom: 197px
+                    li
+                        margin-bottom: 15px
+                        a
+                            font-family: Roboto, sans-serif
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 20px
+                            line-height: 45px
+                            color: #FFFFFF
+            &-right
+                display: none
+        
+
+@media (max-width: 960px)
+    .main
+        padding-top: 61px
+        padding-left: 20px
+        padding-right: 20px
+        &-blok
+            margin-bottom: 86px
+            h1
+                font-size: 35px
+                line-height: 40px
+                max-width: 320px
+                margin-bottom: 26px
+           
+        &-bottom
+            border-top: none
+            padding-top: 0
+            &-item
+                p
+                    font-size: 25px
+                    line-height: 23px
+                    margin-bottom: 10px
+                span
+                    font-size: 13px
+                    line-height: 18px
+                &:nth-child(2)
+                    &:before
+                        content: none
+                    &:after
+                        content: none
+    .catalog
+        padding-top: 35px
+        margin-bottom: 48px
+        h2
+            font-size: 35px
+            line-height: 41px
+            margin-bottom: 17px
+
+
+@media (max-width: 460px)
+    .main
+        &-blok
+            a
+                width: 100%
+
+
+@media (max-width: 1075px)
+    .our_projects
+        padding-top: 169px
+        padding-bottom: 39px
+        margin-top: -168px
+        .pug
+            top: unset
+            bottom: 0
+        .swiper-pagination-bullets
+            .swiper-pagination-bullet 
+                width: 6px
+                height: 6px
+                &:not(:last-child)
+                    margin-right: 9px
+        
+        h2
+            font-size: 35px
+            line-height: 41px
+            margin-bottom: 20px
+            text-align: left
+            padding-left: 20px
+        &_slider_blok
+            flex-direction: column
+            max-width: 100%
+            padding: 0
+            background: transparent
+            img
+                margin-right: 0
+            &_text
+                &-bg
+                    background: transparent
+                    h3
+                        font-size: 23px
+                        line-height: 65px
+                p
+                    font-size: 13px
+                    line-height: 21px
+                    max-width: 338px
+                    &:nth-child(3)
+                        font-size: 13px
+                        line-height: 27px
+                        padding-bottom: 24px
+                        border-bottom: 1px solid #E2E2E2
+
+
+
+@media (max-width: 1260px)
+    .services
+        &-blok
+            &:after
+                content: none
+
+
+
+    
+@media (min-width: 966px) and (max-width: 1200px)
+    header
+        position: fixed
+        width: 100%
+        z-index: 99999999
+    .main
+       height: 100vh
+       position: relative
+    .main-bottom
+        position: absolute
+        bottom: 0
+        width: 100%

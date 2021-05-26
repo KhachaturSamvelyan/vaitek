@@ -1,0 +1,49 @@
+doctype html
+
+block variables
+
+block links
+
+block scripts
+
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title #{title}
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css")
+		link(rel='stylesheet', type='text/css', href="css/pages/" + link)
+		link(rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png")
+		link(rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png")
+		link(rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png")
+		link(rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png")
+		link(rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png")
+		link(rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png")
+		link(rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png")
+		link(rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png")
+		link(rel="manifest" href="img/manifest.json")
+		meta(name="msapplication-TileColor" content="#ffffff")
+		meta(name="msapplication-TileImage" content="img/ms-icon-144x144.png")
+		meta(name="theme-color" content="#ffffff")
+		link(rel="preconnect" href="https://fonts.gstatic.com")
+		link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet")
+		script(src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.3/swiper-bundle.js" integrity="sha512-di2ta1yM8mzG9zh3m2tSQl08ekFu7deY0J9Sq364mSluvmQjPQm13rFMPcoPouWhyrQ8JlZnuRFJjRBrobjZMg==" crossorigin="anonymous")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.3/swiper-bundle.min.css" integrity="sha512-dyhCm56bLHnyu21gROPZwclvKzwszrpvsz4PLLgH7kmQm8YIZISE6veUpvFXv2AXg+ZS5LJrMnqzoka+ZHd4fw==" crossorigin="anonymous")
+		script(src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js")
+		link(rel="stylesheet" href="https://i.icomoon.io/public/temp/7b0ceb36ea/UntitledProject/style.css")
+	body
+		block header
+		block content
+		block footer
+		script(type="text/javascript" src="js/" + js)
+
+
